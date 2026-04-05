@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- Ukraine - uk -->
+<!-- Мова не визначена - zxx -->
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Файл обнулення стилів -->
+		<link rel="stylesheet" href="css/reset.css">
+		<!--Варіант №3 !! Основний !! (підключення окремого файлу) -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері (вкладці) -->
+		<title>Lesson 3</title>
+		<!-- Варіант №1 (тег style) -->
+		<!-- <style>
+			p{
+				color: red;
+			}
+		</style> -->
+	</head>
+	<body>
+		<!------------------------- Атрибут class --------------------------->
+		<!-- 
+			Зв'язує CSS стили з HTML-тегами
+			Використовується для класифікації (групування)
+			HTML-тегів з метою надання їм певних стилів.
+		 -->
+		<!-- 
+			Правила написання імен класів: 
+			1) Англійська мова (Приклад: title)
+			2) Нижній регістр (маленьки літери) (Приклад: title)
+			3) Пробіли замінюємо на дефіс (Приклад: big-title)
+			4) Ім'я класу вільне, але має відображати що виводить HTML-елемент 
+				та бути адекватним
+			5) Назва класу НЕ МОЖЕ починатись з цифри та спец. символив
+		-->
+		<!-- Приклади: -->
+		<!-- 
+		<a href="#" class="link">Text</a>
+		<div class="block"></div>
+		<h1 class="title"></h1>
+		<h2 class="sub-title"></h2>
+		<ul class="list">
+			<li class="item"></li>
+		</ul>
+		 -->
+
+		<!-- 
+			Для одного HTML-тегу може бути додано безліч 
+			значеннь атрибуту class (через пробіл)
+		 -->
+		<!-- 
+		<div class="block">
+			<h1 class="block__title title"></h1>
+		</div>
+		 -->
+
+		<!-- Це два класи big та title -->
+		<!-- <h1 class="big title"></h1> -->
+
+		<!-- Це один клас big-title -->
+		<!-- <h1 class="big-title"></h1> -->
+
+		<!-- 
+			Один клас може застосовуватись 
+			до багатьох HTML-тегів 
+		-->
+		<!-- 
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+		<a href="#" class="block"></a>
+		<a href="#" class="block"></a>
+		<a href="#" class="block"></a>
+		<a href="#" class="block"></a>
+		<a href="#" class="block"></a>
+		<ul class="block">
+			<li class="item"></li>
+		</ul>
+		-->
+
+		<!-- Варіант №2 (атрибут style) -->
+		<!-- <h1 style="color: red;">Привіт!</h1> -->
+		<div class="article">
+			<h1 class="title">Привіт!</h1>
+			<p id="some-id" class="text">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugit, molestias dignissimos corporis officia labore suscipit maxime sed nesciunt nostrum molestiae eaque accusamus ex, ipsum aspernatur consequuntur cum ad obcaecati.
+			</p>
+			<p class="text">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugit, molestias dignissimos corporis officia labore suscipit maxime sed nesciunt nostrum molestiae eaque accusamus ex, ipsum aspernatur consequuntur cum ad obcaecati.
+			</p>
+			<h2 class="sub-title">Підрозділ</h2>
+			<p title="Ще підказка" class="text">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae pariatur dolores expedita iusto eum doloremque iste corporis tempore, similique facilis, a vitae? Error, excepturi alias quos laudantium libero cupiditate velit.
+			</p>
+			<a title="підказка" href="#" class="link">посилання</a>
+			<ul class="list">
+				<li class="item">Пункт</li>
+				<li class="item">Пункт</li>
+				<li class="item">Пункт</li>
+				<li class="item">Пункт</li>
+				<li class="item">Пункт</li>
+			</ul>
+			<div class="text">
+				<p>Some content</p>
+			</div>
+			<div class="block">
+				Some content
+			</div>
+		</div>
+
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat eius culpa accusamus aperiam qui, facilis esse officiis praesentium error labore, illum ducimus illo sit quasi deleniti iusto laboriosam ut?
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat eius culpa accusamus aperiam qui, facilis esse officiis praesentium error labore, illum ducimus illo sit quasi deleniti iusto laboriosam ut?
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat eius culpa accusamus aperiam qui, facilis esse officiis praesentium error labore, illum ducimus illo sit quasi deleniti iusto laboriosam ut?
+		</p>
+
+		<!-- Для бекенду гарно не задавати класи текстовим елементам -->
+		<!-- <div class="article">
+			<h1>Заголовок сатті</h1>
+			<p>
+				Lorem ipsum dolor sit amet <a href="#">consectetur adipisicing</a> elit. Incidunt veniam rem ea iste quo, omnis enim a assumenda sapiente illo architecto. Amet officiis delectus molestiae. At assumenda nemo itaque odit!
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet <a href="#">consectetur adipisicing</a> elit. Incidunt veniam rem ea iste quo, omnis enim a assumenda sapiente illo architecto. Amet officiis delectus molestiae. At assumenda nemo itaque odit!
+			</p>
+			<h2>ПідЗаголовок сатті</h2>
+			<div>
+				<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis temporibus vero quidem eum possimus cumque nemo alias voluptate iste porro. Odio quas repellat facilis itaque quam sit commodi et totam.
+				</p>
+			</div>
+			<p>
+				Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Incidunt veniam rem ea iste quo, omnis enim a assumenda sapiente illo architecto. Amet officiis delectus molestiae. At assumenda nemo itaque odit!
+			</p>
+			<img src="img/..." alt="Image">
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam rem ea iste quo, omnis enim a assumenda sapiente illo architecto. Amet officiis delectus molestiae. At assumenda nemo itaque odit!
+			</p>
+			<h2>ПідЗаголовок сатті</h2>
+			<ul>
+				<li>...</li>
+				<li>...</li>
+				<li>...</li>
+			</ul>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam rem ea iste quo, omnis enim a assumenda sapiente illo architecto. Amet officiis delectus molestiae. At assumenda nemo itaque odit!
+			</p>
+		</div> -->
+		<!-- На бекенді ця конструкція буде виглядати приблизно так: -->
+		<!-- 
+		<div class="article">
+			<?php echo($text); ?>
+		</div> 
+		-->
+
+		<!-- <h3 class="title big">Some title</h3> -->
+
+		<!-- <h3 class="title">
+			<a href="#" class="big">Some</a>
+		</h3> -->
+
+		<!-- Принцип коробочок -->
+		<!-- 
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		 -->
+
+		<!-- 
+		 <div class="text">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		
+		<div class="gallery">
+			<img src="#" class="item-gallery" alt="Image">
+			<img src="#" class="item-gallery" alt="Image">
+			<img src="#" class="item-gallery" alt="Image">
+			<img src="#" class="item-gallery" alt="Image">
+		</div> -->
+
+	</body>
+</html>

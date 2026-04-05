@@ -1,0 +1,19 @@
+.logo {
+    color: red;
+}
+
+.menu a {
+    color: green;
+}
+
+.description p {
+    color: blue;
+}
+
+.history > h2 {
+    color: yellow;
+}
+
+.up {
+    color: orange;
+}
