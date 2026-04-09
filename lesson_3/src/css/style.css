@@ -2,7 +2,7 @@
     color: red;
 }
 
-.menu a {
+.menu-link-1, .menu-link-2, .menu-link-3, .menu-link-4 {
     color: green;
 }
 
@@ -10,10 +10,30 @@
     color: blue;
 }
 
-.history > h2 {
-    color: yellow;
+.description > h2 {
+    color: brown;
+}
+
+.extreme-points ~ li {
+    color: #9f9f9f;
+}
+
+.history-paragraph + p {
+    color: #ba936f;
+}
+
+.history-paragraph.history-paragraph-1 {
+    color: aqua;
 }
 
 .up {
     color: orange;
+}
+
+[class*="na"] {
+    color: yellow;
+}
+
+#just-footer-p {
+    color: aquamarine;
 }
